@@ -10,6 +10,11 @@ namespace OtherQuestions
     {
         static void Main(string[] args)
         {
+            char[] input = "abde8d9328fkajsdifuqefjaisdfiwierkfjausdfajsdkfjioquwiejfkasdf".ToCharArray();
+            
+            Questions.Q3.Solution solution = new Questions.Q3.Solution();
+
+            solution.SortWithoutLoop(input);
         }
     }
 }
