@@ -1,0 +1,13 @@
+Enter file contents here
+
+which one is correct and 
+
+        public IList<IList<int>> fun( )
+        {
+            IList<IList<int>> ret1 = new List<List<int>>(r);
+            IList<IList<int>> ret2 = new List<IList<int>>(r);
+            IList<List<int>> ret3 = new List<List<int>>(r);
+             List<List<int>> ret4 = new List<List<int>>(r);
+             
+            return ret1/2/3/4;
+        }
