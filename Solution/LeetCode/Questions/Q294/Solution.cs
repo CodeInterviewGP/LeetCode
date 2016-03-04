@@ -8,22 +8,36 @@ namespace LeetCode.Questions.Q294
 {
     public class Solution
     {
+        Dictionary<string, bool> mapping = new Dictionary<string, bool>();
+
         public bool CanWin(string s)
         {
+            mapping = new Dictionary<string, bool>();
+
+            return MoveWin(s);
+        }
+
+        private bool MoveWin(string s)
+        {
+            if (mapping.ContainsKey(s))
+            {
+                return mapping[s];
+            }
 
             IList<string> nextSteps = GeneratePossibleNextMoves(s);
 
-
             foreach (string ss in nextSteps)
             {
-                if (!CanWin(ss))
+                if (!MoveWin(ss))
                 {
+                    mapping.Add(s, true);
                     return true;
                 }
             }
 
-            return false;
+            mapping.Add(s, false);
 
+            return false;
         }
 
         public IList<string> GeneratePossibleNextMoves(string s)
