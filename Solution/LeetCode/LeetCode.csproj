@@ -52,6 +52,8 @@
     <Compile Include="Questions\Q286\Question.cs" />
     <Compile Include="Questions\Q286\Solution.cs" />
     <Compile Include="Questions\Q256\Question.cs" />
+    <Compile Include="Questions\Q294\Question.cs" />
+    <Compile Include="Questions\Q294\Solution.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
