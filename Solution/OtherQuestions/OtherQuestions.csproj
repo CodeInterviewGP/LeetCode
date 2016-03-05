@@ -52,9 +52,21 @@
     <Compile Include="Questions\Q2\Solution.cs" />
     <Compile Include="Questions\Q3\Question.cs" />
     <Compile Include="Questions\Q3\Solution.cs" />
+    <Compile Include="Questions\Q4\Question.cs" />
+    <Compile Include="Questions\Q4\Solution.cs" />
+    <Compile Include="Questions\Q5\Question.cs" />
+    <Compile Include="Questions\Q5\Solution.cs" />
+    <Compile Include="Questions\Q6\Question.cs" />
+    <Compile Include="Questions\Q6\Solution.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{0763fcdc-e30b-4c79-b3f0-a05e9b0e72c3}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
