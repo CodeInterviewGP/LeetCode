@@ -11,7 +11,21 @@ namespace OtherQuestions.Questions.Q5
     {
         public int GetSmallClosestNumber(TreeNode root, int target)
         {
-            return 1;
+            if (root == null)
+            {
+                return int.MinValue;
+            }
+
+            if (root.Val >= target)
+            {
+                return GetSmallClosestNumber(root.Left, target);
+            }
+            else
+            {
+                int rightResult = GetSmallClosestNumber(root.Right, target);
+
+                return Math.Max(root.Val, rightResult);
+            }
         }
     }
 }
