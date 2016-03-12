@@ -1,0 +1,10 @@
+Q1 finish each questions in < 30 minutes
+
+1. There are N bolts and N nuts, each bolt is match with a nut, the only function availabe is the compare function which takes a bolt 
+and nut, and return 0, (if bolt and nut match), 1 (bolt is bigger than nut), -1 (bolt is smaller than nut). 
+Write a function to find out all matches
+
+2. There are M by N matrix, each cell represent a room, (some rooms mark as locked which means no body can get in).
+some rooms have guard inside it, guard can go to any room except locked room, guard can only move up/down/left/right, no diangle.
+find out minimum steps guard can reach for each room. e.g. room# 1 takes gurard#1 3 steps to reach there, but it takes guard#2 2steps to get
+there, so room#1 minimum step is 2. 
