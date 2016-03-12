@@ -10,6 +10,7 @@ namespace OtherQuestions
     {
         static void Main(string[] args)
         {
+            int a = 6;
         }
     }
 }
