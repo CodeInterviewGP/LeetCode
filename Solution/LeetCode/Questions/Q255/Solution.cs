@@ -10,6 +10,7 @@ namespace LeetCode.Questions.Q255
     {
         public bool VerifyPreorder(int[] preorder)
         {
+            bool a = false;
             return true;
         }
     }
